@@ -19,6 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import { AdSense } from '@/components/adsense';
 
 interface Device {
   id: string;
@@ -28,7 +29,6 @@ interface Device {
   quantity: number;
 }
 
-// Tarif listrik PLN per kWh (Rupiah)
 const electricityRates: { [key: string]: number } = {
   'R1 - 900 VA': 1352,
   'R1 - 1300 VA': 1444.70,
@@ -108,9 +108,9 @@ export default function ListrikPage() {
         {/* Header */}
         <h1 className="text-3xl font-bold text-center mb-6">Hitung Listrik</h1>
 
-        {/* Ad Placeholder - Top */}
-        <div className="w-full h-32 bg-red-400 rounded-lg mb-6 flex items-center justify-center text-white text-sm">
-          Ad Placeholder
+        {/* AdSense - Top */}
+        <div className="w-full mb-6">
+          <AdSense adSlot="8161451576" />
         </div>
 
         {/* Golongan Tarif Listrik */}
@@ -235,9 +235,9 @@ export default function ListrikPage() {
           </Card>
         )}
 
-        {/* Ad Placeholder - Bottom */}
-        <div className="w-full h-64 bg-red-400 rounded-lg mb-6 flex items-center justify-center text-white text-sm">
-          Ad Placeholder
+        {/* AdSense - Bottom */}
+        <div className="w-full mb-6">
+          <AdSense adSlot="8161451576" />
         </div>
 
         {/* Hitung untuk Biaya per Produk */}
