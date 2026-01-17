@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   description: "Aplikasi mutakhir untuk mengatur usaha kamu.",
   other: {
     "google-adsense-account": "ca-pub-7755684085390762",
+    "google-site-verification": "gP4p6QZalDeDNhiCPKcndOXFlP9Jo9enke3QDqRRGaY",
   },
 };
 
